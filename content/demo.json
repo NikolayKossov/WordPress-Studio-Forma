@@ -1,0 +1,49 @@
+{
+  "title": "Studio Forma",
+  "theme": "studio-forma",
+  "pages": [
+    {
+      "slug": "start",
+      "title": "Start",
+      "content": "<!-- wp:group {\"className\": \"hero\", \"layout\": {\"type\": \"constrained\"}} --><div class=\"wp-block-group hero\"><!-- wp:paragraph --><p>PORTFOLIO / PROJEKT DEMONSTRACYJNY</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":1} --><h1 class=\"wp-block-heading\">Dobra strona zaczyna się od rozmowy.</h1><!-- /wp:heading --><!-- wp:paragraph --><p>Demonstracyjna pracownia projektowania stron dla małych firm. Od krótkiego briefu do przekazania gotowej strony.</p><!-- /wp:paragraph --><!-- wp:buttons --><div class=\"wp-block-buttons\"><!-- wp:button --><div class=\"wp-block-button\"><a class=\"wp-block-button__link wp-element-button\" href=\"#oferta\">Poznaj szczegóły</a></div><!-- /wp:button --></div><!-- /wp:buttons --></div><!-- /wp:group --><!-- wp:group {\"anchor\":\"oferta\",\"className\":\"service-grid\"} --><div id=\"oferta\" class=\"wp-block-group service-grid\"><!-- wp:group {\"className\": \"service-card\", \"layout\": {\"type\": \"constrained\"}} --><div class=\"wp-block-group service-card\"><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Brief i struktura</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Ustalamy odbiorców, cel strony i potrzebne treści.</p><!-- /wp:paragraph --></div><!-- /wp:group --><!-- wp:group {\"className\": \"service-card\", \"layout\": {\"type\": \"constrained\"}} --><div class=\"wp-block-group service-card\"><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Projekt i wdrożenie</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Przygotowujemy przejrzysty układ i edytowalne sekcje.</p><!-- /wp:paragraph --></div><!-- /wp:group --><!-- wp:group {\"className\": \"service-card\", \"layout\": {\"type\": \"constrained\"}} --><div class=\"wp-block-group service-card\"><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Przekazanie i wsparcie</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Pokazujemy edycję treści i dokumentujemy ustawienia.</p><!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Jak pracujemy</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Najpierw poznajemy potrzeby. Następnie uzgadniamy zakres i termin. Każdą zmianę opisujemy przed wdrożeniem.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Porozmawiajmy</h2><!-- /wp:heading --><!-- wp:paragraph --><p>To fikcyjna marka przygotowana do portfolio. Dane kontaktowe są demonstracyjne: hello@example.com.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Pytania przed rozpoczęciem</h2><!-- /wp:heading --><!-- wp:shortcode -->[studio_faq]<!-- /wp:shortcode -->"
+    },
+    {
+      "slug": "o-nas",
+      "title": "O nas",
+      "content": "<!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Pomysł na Studio Forma</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Demonstracyjna pracownia projektowania stron dla małych firm. Od krótkiego briefu do przekazania gotowej strony.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Ten projekt jest ćwiczeniem WordPress. Nie przedstawia rzeczywistej firmy ani wykonanych zleceń.</p><!-- /wp:paragraph -->"
+    },
+    {
+      "slug": "kontakt",
+      "title": "Kontakt",
+      "content": "<!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Napisz do nas</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Adres demonstracyjny: <a href=\"mailto:hello@example.com\">hello@example.com</a>. Nie wysyłaj danych osobowych. Formularz nie jest podłączony do poczty.</p><!-- /wp:paragraph -->"
+    },
+    {
+      "slug": "aktualnosci",
+      "title": "Aktualności",
+      "content": ""
+    }
+  ],
+  "posts": [
+    {
+      "slug": "poradnik-1",
+      "title": "Brief i struktura — od czego zacząć?",
+      "category": "Brief i struktura",
+      "excerpt": "Ustalamy odbiorców, cel strony i potrzebne treści.",
+      "content": "<!-- wp:paragraph --><p>Ustalamy odbiorców, cel strony i potrzebne treści.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Zacznij od prostego planu</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Zapisz cel, dostępny czas i pytania. Podziel zadanie na mniejsze etapy. Dzięki temu łatwiej ocenisz, co trzeba przygotować.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Sprawdź szczegóły</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Przed rozpoczęciem zweryfikuj terminy, zakres i potrzebne materiały. Ten tekst jest przykładową treścią redakcyjną do ćwiczenia publikacji.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Następny krok</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Wróć do planu po zakończeniu pierwszego etapu i zanotuj, co warto zmienić.</p><!-- /wp:paragraph -->"
+    },
+    {
+      "slug": "poradnik-2",
+      "title": "Projekt i wdrożenie — od czego zacząć?",
+      "category": "Projekt i wdrożenie",
+      "excerpt": "Przygotowujemy przejrzysty układ i edytowalne sekcje.",
+      "content": "<!-- wp:paragraph --><p>Przygotowujemy przejrzysty układ i edytowalne sekcje.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Zacznij od prostego planu</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Zapisz cel, dostępny czas i pytania. Podziel zadanie na mniejsze etapy. Dzięki temu łatwiej ocenisz, co trzeba przygotować.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Sprawdź szczegóły</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Przed rozpoczęciem zweryfikuj terminy, zakres i potrzebne materiały. Ten tekst jest przykładową treścią redakcyjną do ćwiczenia publikacji.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Następny krok</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Wróć do planu po zakończeniu pierwszego etapu i zanotuj, co warto zmienić.</p><!-- /wp:paragraph -->"
+    },
+    {
+      "slug": "poradnik-3",
+      "title": "Przekazanie i wsparcie — od czego zacząć?",
+      "category": "Przekazanie i wsparcie",
+      "excerpt": "Pokazujemy edycję treści i dokumentujemy ustawienia.",
+      "content": "<!-- wp:paragraph --><p>Pokazujemy edycję treści i dokumentujemy ustawienia.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Zacznij od prostego planu</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Zapisz cel, dostępny czas i pytania. Podziel zadanie na mniejsze etapy. Dzięki temu łatwiej ocenisz, co trzeba przygotować.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Sprawdź szczegóły</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Przed rozpoczęciem zweryfikuj terminy, zakres i potrzebne materiały. Ten tekst jest przykładową treścią redakcyjną do ćwiczenia publikacji.</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":2} --><h2 class=\"wp-block-heading\">Następny krok</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Wróć do planu po zakończeniu pierwszego etapu i zanotuj, co warto zmienić.</p><!-- /wp:paragraph -->"
+    }
+  ]
+}

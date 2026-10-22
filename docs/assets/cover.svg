@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="460" viewBox="0 0 1440 460" role="img" aria-labelledby="title desc">
+<title id="title">Studio Forma — WordPress portfolio</title><desc id="desc">Project identity banner. Presentation in the theme. Content features in the plugin.</desc>
+<rect width="1440" height="460" fill="#202c59"/>
+<g fill="none" stroke="#b9ccff" opacity=".14"><circle cx="1290" cy="230" r="270"/><circle cx="1290" cy="230" r="200"/><circle cx="1290" cy="230" r="130"/><path d="M1000 0v460M1120 0v460M1240 0v460M1360 0v460M960 110h480M960 230h480M960 350h480"/></g>
+<rect x="74" y="68" width="46" height="4" fill="#b9ccff"/>
+<text x="74" y="118" fill="#b9ccff" font-family="Arial,sans-serif" font-size="17" letter-spacing="3">CREATIVE STUDIO / THEME + PLUGIN</text>
+<text x="70" y="226" fill="#ffffff" font-family="Georgia,serif" font-size="78">Studio Forma</text>
+<text x="74" y="285" fill="#b9ccff" font-family="Arial,sans-serif" font-size="24">Presentation in the theme. Content features in the plugin.</text>
+<path d="M74 343h850" stroke="#b9ccff" opacity=".35"/>
+<text x="74" y="391" fill="#ffffff" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">WORDPRESS PORTFOLIO</text>
+<text x="924" y="391" text-anchor="end" fill="#b9ccff" font-family="Arial,sans-serif" font-size="16">NIKOLAY KOSSOV</text>
+</svg>

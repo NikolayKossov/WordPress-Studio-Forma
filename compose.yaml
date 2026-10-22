@@ -1,0 +1,46 @@
+services:
+  db:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wordpress
+      MARIADB_PASSWORD: ${DB_PASSWORD:?Create .env first}
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:?Create .env first}
+    volumes: ["db:/var/lib/mysql"]
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+  wordpress:
+    image: wordpress:php8.3-apache
+    ports: ["127.0.0.1:${PORT:-8081}:80"]
+    environment: &wp-env
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: wordpress
+    depends_on:
+      db: {condition: service_healthy}
+    volumes: &wp-volumes
+      - wp:/var/www/html
+      - ./themes/studio-forma:/var/www/html/wp-content/themes/studio-forma:ro
+      - ./scripts:/portfolio/scripts:ro
+      - ./content:/portfolio/content:ro
+      - ./plugins/studio-faq:/var/www/html/wp-content/plugins/studio-faq:ro
+  cli:
+    image: wordpress:cli-php8.3
+    user: "33:33"
+    environment:
+      <<: *wp-env
+      SITE_URL: ${SITE_URL}
+      WP_ADMIN_USER: ${WP_ADMIN_USER}
+      WP_ADMIN_PASSWORD: ${WP_ADMIN_PASSWORD}
+      WP_ADMIN_EMAIL: ${WP_ADMIN_EMAIL}
+    volumes: *wp-volumes
+    depends_on:
+      db: {condition: service_healthy}
+    entrypoint: ["/bin/sh"]
+volumes:
+  db:
+  wp:

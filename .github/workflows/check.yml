@@ -1,0 +1,29 @@
+name: WordPress checks
+on: [push, pull_request]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: PHP syntax
+        run: find themes scripts plugins -name '*.php' -print0 2>/dev/null | xargs -0 -r -n1 php -l
+      - name: Start WordPress
+        run: |
+          cp .env.example .env
+          docker compose up -d wordpress
+          docker compose run --rm cli /portfolio/scripts/setup.sh
+          docker compose run --rm cli /portfolio/scripts/setup.sh
+      - name: HTTP checks
+        run: |
+          set -a; . ./.env; set +a
+          curl --fail --retry 12 --retry-connrefused "$SITE_URL/" -o /tmp/home.html
+          grep -q 'PORTFOLIO' /tmp/home.html
+          curl --fail "$SITE_URL/kontakt/"
+          curl --fail "$SITE_URL/?s=plan"
+          test "$(curl -s -o /dev/null -w '%{http_code}' "$SITE_URL/does-not-exist-portfolio/")" = 404
+      - name: Logs on failure
+        if: failure()
+        run: docker compose logs --tail=100
+      - name: Stop
+        if: always()
+        run: docker compose down
